@@ -5,6 +5,9 @@ const PostSide = () => {
     return (
         <div className=''>
             <PostShare></PostShare>
+            <div>
+                
+            </div>
         </div>
     );
 };
