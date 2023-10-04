@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FiSearch } from 'react-icons/fi';
 import "./ProfileSide.css"
+import logo from "/img/logo.png"
+import Followers from './Followers';
 
 const ProfileSide = () => {
+    const [followers, setFollowers] = useState([])
+    console.log(followers);
+    useEffect(() => {
+        fetch('/followers.json')
+            .then(res => res.json())
+            .then(data => setFollowers(data))
+    }, [])
     return (
         <div className=''>
             <div className='flex justify-between items-center'>
-                <img className='w-16 rounded-full mr-1' src="../../../public/img/logo.png" alt="" />
+                <img className='w-12 h-12 rounded-full mr-1' src={logo} alt="" />
                 <input type="text" placeholder='#Explore' className='bg-gray-200 p-2 outline-none border-none rounded-s' />
                 <FiSearch className='button w-10 h-10 rounded-e' />
             </div>
@@ -37,6 +46,13 @@ const ProfileSide = () => {
                 <div>
                     <p className='text-center font-bold text-blue-900 pb-3'>My Profile</p>
                 </div>
+            </div>
+            <div className='mt-10'>
+                <h1 className='text-xl font-bold'>Who is following you?</h1>
+                {
+                    followers.map(follower => <Followers key={follower.id} follower={follower}></Followers>)
+                }
+
             </div>
         </div>
     );
