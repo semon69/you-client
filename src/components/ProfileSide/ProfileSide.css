@@ -1,0 +1,46 @@
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    background: var(--buttonBg);
+    transition: all 100ms ease-out;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.profileCard {
+    overflow-x: clip;
+    background: var(--cardColor);
+}
+
+.images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2 {
+    width: 6rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -2rem;
+    box-shadow: var(--profileShadow);
+}
+
+.follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.vl {
+    height: 150%;
+    border-left: 2px solid black;
+}
