@@ -1,14 +1,13 @@
 import React from 'react';
 import "./Home.css"
 import ProfileSide from '../../components/ProfileSide/ProfileSide';
+import PostSide from '../../components/PostSide/PostSide';
 
 const Home = () => {
     return (
         <div className='home p-4'>
             <ProfileSide></ProfileSide>
-            <div  className='bg-green-400'>
-                <p>Feed</p>
-            </div>
+            <PostSide></PostSide>
             <div className='bg-blue-400' >
                 <p>Settings</p>
             </div>

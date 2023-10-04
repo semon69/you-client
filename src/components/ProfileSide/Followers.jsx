@@ -13,7 +13,7 @@ const Followers = ({ follower }) => {
                         <p>{follower.title}</p>
                     </div>
                 </div>
-                <button className='btn-primary px-3 py-1 rounded hover:text-blue-900 font-bold border-2 border-blue-900'>Follow</button>
+                <button className='btn-primary'>Follow</button>
             </div>
         </div>
     );

@@ -17,6 +17,11 @@
   .btn-primary{
     background: linear-gradient(to right, #255ef9, #1f1c83);
     color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    border-width: 2px;
+    border-color: #1f1c83;
   }
   .btn-primary:hover{
     background: white;

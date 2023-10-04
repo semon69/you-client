@@ -1,0 +1,20 @@
+.profileImg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.postOption{
+    display: flex;
+    justify-content: space-around;
+}
+.option{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+}
