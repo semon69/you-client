@@ -1,0 +1,73 @@
+[
+    {
+      "img": "https://example.com/image1.jpg",
+      "name": "Item 1",
+      "description": "This is the first item",
+      "likes": 42,
+      "liked": true
+    },
+    {
+      "img": "https://example.com/image2.jpg",
+      "name": "Item 2",
+      "description": "A description for the second item",
+      "likes": 78,
+      "liked": false
+    },
+    {
+      "img": "https://example.com/image3.jpg",
+      "name": "Item 3",
+      "description": "Description for item number three",
+      "likes": 15,
+      "liked": true
+    },
+    {
+      "img": "https://example.com/image4.jpg",
+      "name": "Item 4",
+      "description": "The fourth item's description",
+      "likes": 60,
+      "liked": false
+    },
+    {
+      "img": "https://example.com/image5.jpg",
+      "name": "Item 5",
+      "description": "Description of the fifth item",
+      "likes": 95,
+      "liked": true
+    },
+    {
+      "img": "https://example.com/image6.jpg",
+      "name": "Item 6",
+      "description": "The sixth item's description",
+      "likes": 23,
+      "liked": false
+    },
+    {
+      "img": "https://example.com/image7.jpg",
+      "name": "Item 7",
+      "description": "Description for item seven",
+      "likes": 37,
+      "liked": true
+    },
+    {
+      "img": "https://example.com/image8.jpg",
+      "name": "Item 8",
+      "description": "The eighth item's description",
+      "likes": 51,
+      "liked": false
+    },
+    {
+      "img": "https://example.com/image9.jpg",
+      "name": "Item 9",
+      "description": "Description of the ninth item",
+      "likes": 68,
+      "liked": true
+    },
+    {
+      "img": "https://example.com/image10.jpg",
+      "name": "Item 10",
+      "description": "This is the tenth item",
+      "likes": 10,
+      "liked": false
+    }
+  ]
+  
