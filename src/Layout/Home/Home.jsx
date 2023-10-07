@@ -2,15 +2,14 @@ import React from 'react';
 import "./Home.css"
 import ProfileSide from '../../components/ProfileSide/ProfileSide';
 import PostSide from '../../components/PostSide/PostSide';
+import RightSide from '../../components/RightSide/RightSide';
 
 const Home = () => {
     return (
-        <div className='home p-4'>
+        <div className='p-4 home'>
             <ProfileSide></ProfileSide>
             <PostSide></PostSide>
-            <div className='bg-blue-400' >
-                <p>Settings</p>
-            </div>
+            <RightSide></RightSide>
         </div>
     );
 };
