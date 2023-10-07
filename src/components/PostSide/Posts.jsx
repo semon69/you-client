@@ -1,23 +1,31 @@
 import React from 'react';
-import { AiOutlineHeart } from 'react-icons/ai';
+import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
 import { BiCommentDetail } from 'react-icons/bi';
 import { FiSend } from 'react-icons/fi';
 
-const Posts = () => {
+const Posts = ({ post }) => {
+    const { img, name, description, likes, liked } = post
     return (
-        <div className='p-4 rounded-md bg-zinc-100'>
-            <img className='object-cover w-full rounded-md max-h-96' src={'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTgyfHxwcm9maWxlJTIwcGljdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60'} alt="" />
+        <div className='p-4 rounded-md my-7 bg-zinc-100'>
+            <img className='object-cover w-full rounded-md max-h-96' src={img} alt="" />
             <div className='flex gap-4 py-3 text-3xl'>
-                <div>
-                    <AiOutlineHeart />
+                <div className='cursor-pointer '>
+                    {
+                        liked ?
+                            <AiTwotoneHeart className='text-red-600' />
+                            :
+                            <AiOutlineHeart />
+                    }
+
+
                 </div>
-                <BiCommentDetail />
-                <FiSend />
+                <BiCommentDetail className='cursor-pointer ' />
+                <FiSend className='cursor-pointer ' />
             </div>
-            <p>{"100 likes"}</p>
+            <p>{likes} Likes</p>
             <div className='flex gap-2'>
-                <h1 className='font-bold'>{'Nomuasu'}</h1>
-                <h1>{"Brand new photo of mine"}</h1>
+                <h1 className='font-bold'>{name}</h1>
+                <h1>{description}</h1>
             </div>
         </div>
     );

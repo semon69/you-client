@@ -1,73 +1,82 @@
 [
     {
-      "img": "https://example.com/image1.jpg",
-      "name": "Item 1",
-      "description": "This is the first item",
-      "likes": 42,
-      "liked": true
+        "_id": 1,
+        "img": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8dHJhdmVsfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 1",
+        "description": "This is the first item",
+        "likes": 42,
+        "liked": true
     },
     {
-      "img": "https://example.com/image2.jpg",
-      "name": "Item 2",
-      "description": "A description for the second item",
-      "likes": 78,
-      "liked": false
+        "_id": 2,
+        "img": "https://images.unsplash.com/photo-1488085061387-422e29b40080?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 2",
+        "description": "A description for the second item",
+        "likes": 78,
+        "liked": false
     },
     {
-      "img": "https://example.com/image3.jpg",
-      "name": "Item 3",
-      "description": "Description for item number three",
-      "likes": 15,
-      "liked": true
+        "_id": 3,
+        "img": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 3",
+        "description": "Description for item number three",
+        "likes": 15,
+        "liked": true
     },
     {
-      "img": "https://example.com/image4.jpg",
-      "name": "Item 4",
-      "description": "The fourth item's description",
-      "likes": 60,
-      "liked": false
+        "_id": 4,
+        "img": "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 4",
+        "description": "The fourth item's description",
+        "likes": 60,
+        "liked": false
     },
     {
-      "img": "https://example.com/image5.jpg",
-      "name": "Item 5",
-      "description": "Description of the fifth item",
-      "likes": 95,
-      "liked": true
+        "_id": 5,
+        "img": "https://images.unsplash.com/photo-1530789253388-582c481c54b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 5",
+        "description": "Description of the fifth item",
+        "likes": 95,
+        "liked": true
     },
     {
-      "img": "https://example.com/image6.jpg",
-      "name": "Item 6",
-      "description": "The sixth item's description",
-      "likes": 23,
-      "liked": false
+        "_id": 6,
+        "img": "https://images.unsplash.com/photo-1682685797208-c741d58c2eff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxzZWFyY2h8NDh8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 6",
+        "description": "The sixth item's description",
+        "likes": 23,
+        "liked": false
     },
     {
-      "img": "https://example.com/image7.jpg",
-      "name": "Item 7",
-      "description": "Description for item seven",
-      "likes": 37,
-      "liked": true
+        "_id": 7,
+        "img": "https://images.unsplash.com/photo-1503457574462-bd27054394c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjZ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 7",
+        "description": "Description for item seven",
+        "likes": 37,
+        "liked": true
     },
     {
-      "img": "https://example.com/image8.jpg",
-      "name": "Item 8",
-      "description": "The eighth item's description",
-      "likes": 51,
-      "liked": false
+        "_id": 8,
+        "img": "https://images.unsplash.com/photo-1498307833015-e7b400441eb8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 8",
+        "description": "The eighth item's description",
+        "likes": 51,
+        "liked": false
     },
     {
-      "img": "https://example.com/image9.jpg",
-      "name": "Item 9",
-      "description": "Description of the ninth item",
-      "likes": 68,
-      "liked": true
+        "_id": 9,
+        "img": "https://images.unsplash.com/photo-1517400508447-f8dd518b86db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 9",
+        "description": "Description of the ninth item",
+        "likes": 68,
+        "liked": true
     },
     {
-      "img": "https://example.com/image10.jpg",
-      "name": "Item 10",
-      "description": "This is the tenth item",
-      "likes": 10,
-      "liked": false
+        "_id": 10,
+        "img": "https://images.unsplash.com/photo-1522509585149-c9cd39d1ff08?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA2fHx0cmF2ZWx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "name": "Item 10",
+        "description": "This is the tenth item",
+        "likes": 10,
+        "liked": false
     }
-  ]
-  
+]

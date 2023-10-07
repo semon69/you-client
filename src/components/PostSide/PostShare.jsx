@@ -19,7 +19,7 @@ const PostShare = () => {
     }
     return (
         <div>
-            <div className='flex gap-2 p-3 mb-10 rounded bg-zinc-100'>
+            <div className='flex gap-2 p-3 mb-4 rounded bg-zinc-100'>
                 <img className='profileImg' src="https://images.unsplash.com/photo-1628157588553-5eeea00af15c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" alt="" />
                 <div className='flex flex-col w-full gap-3'>
                     <div>
