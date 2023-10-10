@@ -1,31 +1,20 @@
-import React from 'react';
-import { AiOutlineHeart, AiTwotoneHeart } from 'react-icons/ai';
-import { BiCommentDetail } from 'react-icons/bi';
-import { FiSend } from 'react-icons/fi';
+import React, { useEffect, useState } from 'react';
+import Post from './Post';
 
-const Posts = ({ post }) => {
-    const { img, name, description, likes, liked } = post
+const Posts = () => {
+    const [posts, setPosts] = useState([])
+    useEffect(() => {
+        fetch("/posts.json")
+            .then(res => res.json())
+            .then(data => setPosts(data))
+    }, [])
     return (
-        <div className='p-4 rounded-md my-7 bg-zinc-100'>
-            <img className='object-cover w-full rounded-md max-h-96' src={img} alt="" />
-            <div className='flex gap-4 py-3 text-3xl'>
-                <div className='cursor-pointer '>
-                    {
-                        liked ?
-                            <AiTwotoneHeart className='text-red-600' />
-                            :
-                            <AiOutlineHeart />
-                    }
+        <div>
+            <div className=''>
+                {
+                    posts.map(post => <Post key={post._id} post={post}></Post>)
+                }
 
-
-                </div>
-                <BiCommentDetail className='cursor-pointer ' />
-                <FiSend className='cursor-pointer ' />
-            </div>
-            <p>{likes} Likes</p>
-            <div className='flex gap-2'>
-                <h1 className='font-bold'>{name}</h1>
-                <h1>{description}</h1>
             </div>
         </div>
     );

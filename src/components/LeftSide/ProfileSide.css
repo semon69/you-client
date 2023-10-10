@@ -13,8 +13,16 @@
 }
 
 .profileCard {
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
     overflow-x: clip;
     background: var(--cardColor);
+}
+.followers{
+    width: 90%;
 }
 
 .images {
@@ -42,5 +50,5 @@
 
 .vl {
     height: 150%;
-    border-left: 2px solid black;
+    border-left: 6px solid black;
 }
