@@ -6,8 +6,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Profile from './Layout/Profile/Profile.jsx';
 import Home from './Layout/Home/Home.jsx';
+import MainProfile from './components/MainProfile/MainProfile.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/profile",
-        element: <Profile></Profile>,
+        element: <MainProfile></MainProfile>,
       }
     ]
   },

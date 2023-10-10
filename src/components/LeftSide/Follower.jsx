@@ -1,7 +1,7 @@
 import React from 'react';
 import "../../App.css"
 
-const Followers = ({ follower }) => {
+const Follower = ({ follower }) => {
     return (
         <div className='mt-4'>
             
@@ -19,4 +19,4 @@ const Followers = ({ follower }) => {
     );
 };
 
-export default Followers;
+export default Follower;
