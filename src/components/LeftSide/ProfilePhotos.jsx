@@ -28,19 +28,22 @@ const ProfilePhotos = () => {
                         </div>
                         {
                             ProfileSide &&
-                            
-                                <div className='follow'>
-                                    <span className='font-bold'>4</span>
-                                    <span>Posts</span>
-                                </div>
-                            
+
+                            <div className='follow'>
+                                <span className='font-bold'>4</span>
+                                <span>Posts</span>
+                            </div>
+
                         }
                     </div>
                     <hr />
                 </div>
-                <div>
-                    <p className='text-center font-bold text-blue-900 pb-3'><Link to='/profile'>My Profile</Link> </p>
-                </div>
+                {
+                    ProfileSide ? '' :
+                        <div>
+                            <p className='text-center font-bold text-blue-900 pb-3'><Link to='/profile'>My Profile</Link> </p>
+                        </div>
+                }
             </div>
         </div>
     );

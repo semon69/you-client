@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './Layout/Home/Home.jsx';
 import MainProfile from './components/MainProfile/MainProfile.jsx';
+import Auth from './Layout/Auth/Auth.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <MainProfile></MainProfile>,
+      },
+      {
+        path: "/auth",
+        element: <Auth></Auth>
       }
     ]
   },
