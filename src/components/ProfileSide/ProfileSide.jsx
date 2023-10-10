@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { FiSearch } from 'react-icons/fi';
 import "./ProfileSide.css"
-import logo from "/img/logo.png"
 import Followers from './Followers';
 import { Link } from 'react-router-dom';
+import SearchLogo from './SearchLogo';
 
 const ProfileSide = () => {
     const [followers, setFollowers] = useState([])
@@ -15,11 +14,7 @@ const ProfileSide = () => {
     }, [])
     return (
         <div className=''>
-            <div className='flex justify-between items-center'>
-                <img className='w-12 h-12 rounded-full mr-1' src={logo} alt="" />
-                <input type="text" placeholder='#Explore' className='bg-gray-200 p-2 outline-none border-none rounded-s' />
-                <FiSearch className='button w-10 h-10 rounded-e' />
-            </div>
+            <SearchLogo></SearchLogo>
             <div className='profileCard shadow-xl rounded-xl'>
                 <div className='images'>
                     <img className='w-full rounded-t-2xl' src="https://cdn.pixabay.com/photo/2016/08/16/03/24/forest-1597029_1280.png" alt="" />
