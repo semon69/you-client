@@ -3,6 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 import "./ProfileSide.css"
 import logo from "/img/logo.png"
 import Followers from './Followers';
+import { Link } from 'react-router-dom';
 
 const ProfileSide = () => {
     const [followers, setFollowers] = useState([])
@@ -44,7 +45,7 @@ const ProfileSide = () => {
                     <hr />
                 </div>
                 <div>
-                    <p className='text-center font-bold text-blue-900 pb-3'>My Profile</p>
+                    <p className='text-center font-bold text-blue-900 pb-3'><Link to='/profile'>My Profile</Link> </p>
                 </div>
             </div>
             <div className='mt-10'>
