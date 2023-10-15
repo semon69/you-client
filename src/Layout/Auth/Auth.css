@@ -3,21 +3,22 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    gap: 4rem;
+    gap: 1rem;
     position: relative;
   }
   
-  .Auth > div {
+  /* .Auth > div {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
   
   
   
   /* left side */
   .a-left{
       gap: 2rem;
+      width: 50%;
   }
   
   .a-left > img {
@@ -25,7 +26,9 @@
     height: 4rem;
   }
   
-
+  .a-right{
+    width: 50%;
+  }
 
   .infoForm{
     display: flex;
@@ -42,13 +45,7 @@
     border-radius: 8px;
     padding: 20px;
     flex:1;
-  }
-  
-  .infoForm>div{
-    display: flex;
-    gap: 1rem;
-    height: 2rem;
-    width: 90%;
+    width: 100%;
   }
   
   .infoButton{
@@ -61,7 +58,6 @@
   .authForm{
       background-color: var(--cardColor);
       border-radius: 1rem;
-      padding: 1rem;
   }
   
   .authForm>div{
@@ -69,3 +65,5 @@
       align-items: center;
       justify-content: center;
   }
+
+  
