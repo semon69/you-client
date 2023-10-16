@@ -5,11 +5,11 @@ import Followers from './Followers';
 import ProfilePhotos from './ProfilePhotos';
 
 const ProfileSide = () => {
-
+    const ProfileSide = false;
     return (
         <div className='profileCard'>
             <SearchLogo></SearchLogo>
-            <ProfilePhotos></ProfilePhotos>
+            <ProfilePhotos ProfileSide={ProfileSide}></ProfilePhotos>
             <Followers></Followers>
         </div>
     );

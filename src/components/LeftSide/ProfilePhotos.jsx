@@ -2,8 +2,7 @@ import React from 'react';
 import "./ProfileSide.css"
 import { Link } from 'react-router-dom';
 
-const ProfilePhotos = () => {
-    const ProfileSide = true;
+const ProfilePhotos = ({ProfileSide}) => {
     return (
         <div>
             <div className='shadow-xl rounded-xl'>

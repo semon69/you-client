@@ -5,9 +5,10 @@ import "./MyProfile.css"
 import PostShare from '../../PostSide/PostShare';
 
 const CenterProfile = () => {
+    const ProfileSide = true;
     return (
         <div className='overflow-auto height'>
-            <ProfilePhotos></ProfilePhotos>
+            <ProfilePhotos ProfileSide={ProfileSide}></ProfilePhotos>
             <PostShare></PostShare>
             <Posts></Posts>
         </div>

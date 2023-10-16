@@ -3,7 +3,7 @@ import Follower from './Follower';
 
 const Followers = () => {
     const [followers, setFollowers] = useState([])
-    console.log(followers);
+   
     useEffect(() => {
         fetch('/followers.json')
             .then(res => res.json())
