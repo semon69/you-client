@@ -5,7 +5,6 @@ import "../../App.css"
 import Lottie from "lottie-react";
 import login from "../../../public/LottieFiles/login.json"
 
-
 const Auth = () => {
   return (
     <div className="Auth">
