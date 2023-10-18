@@ -4,6 +4,8 @@ import { AiFillHome } from 'react-icons/ai';
 import { MdNotificationsNone } from 'react-icons/md';
 import { BiCommentDetail } from 'react-icons/bi';
 import "../../App.css"
+import PostShare from '../PostSide/PostShare';
+import "./RightSide.css"
 
 const RightSide = () => {
     const [trends, setTrends] = useState([])
@@ -33,8 +35,18 @@ const RightSide = () => {
                 }
             </div>
             <div className='p-6'>
-                <button className='w-full h-12 btn-primary'>Share</button>
+                <button className='w-full h-12 btn-primary' onClick={() => document.getElementById('my_modal_3').showModal()}>Share</button>
             </div>
+            <dialog id="my_modal_3" className="modal">
+                <div className="modal-box">
+                    <div className=' modal-wide overflow-x-auto'>
+                        <PostShare></PostShare>
+                    </div>
+                </div>
+                <form method="dialog" className="modal-backdrop">
+                    <button>close</button>
+                </form>
+            </dialog>
         </div>
     );
 };

@@ -5,6 +5,7 @@ import CenterProfile from './MyProfile/CenterProfile';
 import ProfileRight from './MyProfile/ProfileRight';
 
 const MainProfile = () => {
+    
     return (
         <div className='p-4 home'>
             <ProfileLeft></ProfileLeft>
