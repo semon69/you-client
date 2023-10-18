@@ -26,20 +26,20 @@ const YourInfo = () => {
             <button className='btn-primary self-end'>Logout</button>
             <dialog id="my_modal_2" className="modal">
                 <div className="modal-box">
-                    <form className="">
-                        <h3>Your info</h3>
+                    <form className="space-y-4 ">
+                        <h3 className='font-bold text-xl'>Your info</h3>
 
-                        <div>
+                        <div className='flex justify-between'>
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md"
                                 name="FirstName"
                                 placeholder="First Name"
                             />
 
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md "
                                 name="LastName"
                                 placeholder="Last Name"
                             />
@@ -48,23 +48,23 @@ const YourInfo = () => {
                         <div>
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md w-full"
                                 name="worksAT"
                                 placeholder="Works at"
                             />
                         </div>
 
-                        <div>
+                        <div className='flex justify-between'>
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md"
                                 name="livesIN"
                                 placeholder="LIves in"
                             />
 
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md"
                                 name="Country"
                                 placeholder="Country"
                             />
@@ -73,20 +73,21 @@ const YourInfo = () => {
                         <div>
                             <input
                                 type="text"
-                                className=""
+                                className="outline-none p-2 border-2 rounded-md w-full"
                                 placeholder="RelationShip Status"
                             />
                         </div>
 
 
-                        <div>
-                            Profile Image
-                            <input type="file" name='profileImg' />
-                            Cover Image
-                            <input type="file" name="coverImg" />
+                        <div className='flex gap-2'>
+                            <p className='font-bold'>Profile Image</p>
+                            <input type="file" name='profileImg' className="file-input file-input-bordered file-input-primary w-full max-w-xs" />
                         </div>
-
-                        <button className="button infoButton">Update</button>
+                        <div className='flex gap-2'>
+                            <p className='font-bold'>Cover Image</p>
+                            <input type="file" name="coverImg" className="file-input file-input-bordered file-input-primary w-full max-w-xs" />
+                        </div>
+                        <button className="btn-primary">Update</button>
                     </form>
                 </div>
                 <form method="dialog" className="modal-backdrop">
