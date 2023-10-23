@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Auth.css";
 import logo from "/img/logo.png"
 import "../../App.css"
 import Lottie from "lottie-react";
 import login from "../../../public/LottieFiles/login.json"
 
+
 const Auth = () => {
+  const [isSignUp, setIsSignUp] = useState(false)
   return (
     <div className="Auth">
       <div className="a-left">
@@ -13,12 +15,17 @@ const Auth = () => {
       </div>
 
       <div className='a-right'>
-        <SignUp></SignUp>
+        {
+          isSignUp ?
+          <LogIn isSignUp={isSignUp} setIsSignUp={setIsSignUp}></LogIn>
+          :
+          <SignUp isSignUp={isSignUp} setIsSignUp={setIsSignUp}></SignUp>
+        }
       </div>
     </div>
   );
 };
-function LogIn() {
+function LogIn({isSignUp, setIsSignUp}) {
   return (
     <div className="w-4/5">
       <form className="px-4 py-10 space-y-3 shadow-lg infoForm authForm">
@@ -45,7 +52,7 @@ function LogIn() {
         </div>
 
         <div className='text-center'>
-          <span style={{ fontSize: "16px" }} className='hover:underline'>
+          <span style={{ fontSize: "14px" }} className='hover:underline' onClick={()=>setIsSignUp(!isSignUp)}>
             Don't have an account Sign up
           </span>
           <button className="btn-primary text-violet-800 ms-3" type='submit'>Login</button>
@@ -54,7 +61,7 @@ function LogIn() {
     </div>
   );
 }
-function SignUp() {
+function SignUp({isSignUp, setIsSignUp}) {
   return (
     <div className="w-4/5">
       <form className="px-4 py-10 space-y-4 shadow-xl infoForm authForm">
@@ -103,7 +110,7 @@ function SignUp() {
         </div>
 
         <div className='text-center'>
-          <span style={{ fontSize: '12px' }} className='hover:underline'>Already have an account. Login!</span>
+          <span style={{ fontSize: '14px' }} className='hover:underline' onClick={()=> setIsSignUp(!isSignUp)}>Already have an account. Login!</span>
           <button className="btn-primary text-violet-800 ms-3" type="submit">Signup</button>
         </div>
         
