@@ -5,7 +5,6 @@ import { MdNotificationsNone } from 'react-icons/md';
 import { BiCommentDetail } from 'react-icons/bi';
 import "../../App.css"
 import PostShare from '../PostSide/PostShare';
-import "./RightSide.css"
 
 const RightSide = () => {
     const [trends, setTrends] = useState([])

@@ -9,11 +9,6 @@ const Auth = () => {
   return (
     <div className="Auth">
       <div className="a-left">
-        {/* <img className='w-12 h-12 mr-1 rounded-full' src={logo} alt="" />
-          <div className="Webname">
-            <h1>YOU</h1>
-            <h6>Explore the world</h6>
-          </div> */}
         <Lottie animationData={login}></Lottie>
       </div>
 
